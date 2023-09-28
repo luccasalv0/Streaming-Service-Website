@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compartible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="swiper bundle/swiper-bundle.min.css">
     <title>Movies+</title>
@@ -15,15 +15,47 @@
     <header>
         <div class="nav container">
             <a href="index.html" class="logo">
-                <img src="movies-assets/movies-logo.png" alt="">
+                <img src="images/movies-logo.png" alt="">
             </a>
             <div class="searchbox">
                 <input type="search" id="search-input" placeholder="Search">
                 <i class='bx bx-search-alt'></i>
             </div>
-            <a href="¨#" class="user">
-                <img src="movies-assets/2avatar.png" alt="" class="user-img">
+            <a href="#" class="user">
+                <img src="images/2avatar.png" alt="" class="user-img" onclick= "toggleMenu()">
             </a>
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/2avatar.png" alt="">
+                        <h3>Unknown User</h3>
+                    </div>
+                    <hr>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-credit-card sm-link'
+                        style='color:#ffffff'></i>
+                        <span class="span">Payments</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-pencil sm-link'
+                        style='color:#ffffff'></i>
+                        <span class="span">Edit Profile</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-cog sm-link'
+                        style='color:#ffffff'></i>
+                        <span class="span">Settings</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-log-out sm-link' style='color:#ffffff'></i>
+                        <span class="span">Log-out</span>
+                    </a>
+
+                </div>
+            </div>
             <div class="navbar">
                 <a href="#home" class="nav-link nav-active">
                     <i class='bx bx-home-alt'></i>
@@ -33,15 +65,15 @@
                     <i class='bx bxs-category'></i>
                     <span class="nav-link-title">Categories</span>
                 </a>
-                <a href="#home" class="nav-link">
+                <a href="my-favorites.html" class="nav-link">
                     <i class='bx bxs-heart'></i>
                     <span class="nav-link-title">Favorites</span>
                 </a>
-                <a href="#home" class="nav-link">
+                <a href="my-list.html" class="nav-link">
                     <i class='bx bx-list-check'></i>
                     <span class="nav-link-title">My List</span>
                 </a>
-                <a href="#home" class="nav-link">
+                <a href="trending.html" class="nav-link">
                     <i class='bx bxs-hot'></i>
                     <span class="nav-link-title">Trending</span>
                 </a>
@@ -53,7 +85,7 @@
         </div>
     </header>
     <section class="home container" id="home">
-        <img src="movies-assets/castlevaniamain.jpg" alt="" class="home-img">
+        <img src="images/castlevaniamain.jpg" alt="" class="home-img">
         <div class="home-text">
             <h1 class="home-title">Castlevania</h1>
             <p>4 Season out now!</p>
@@ -76,7 +108,7 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/spiderman-no-way-home.jpg  " alt="" class="movie-box-img">
+                        <img src="images/spiderman-no-way-home.jpg  " alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Spider-Man: No Way Home</h2>
                             <span class="movie-type">Action</span>
@@ -90,10 +122,9 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/hellsing.jpg
-                        " alt="" class="movie-box-img">
+                        <img src="images/venom.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
-                            <h2 class="movie-title">Hellsing</h2>
+                            <h2 class="movie-title">Venom</h2>
                             <span class="movie-type">Action, Fantasy</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
@@ -105,10 +136,10 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/berserk-large.jpg" alt="">
+                        <img src="images/deadpool.jpg" alt="">
                         <div class="box-text">
-                            <h2 class="movie-title">Berserk</h2>
-                            <span class="movie-type">Dark Fantasy, Action</span>
+                            <h2 class="movie-title">Dead Pool</h2>
+                            <span class="movie-type">Humor, Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
                             </a>
@@ -119,7 +150,7 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/large-movie-3.jpg" alt="" class="movie-box-img">
+                        <img src="images/large-movie-3.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Peaky Blinders</h2>
                             <span class="movie-type">Fiction, Drama, Thriller</span>
@@ -133,10 +164,10 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/The-Conjuring-large.jpg" alt="" class="movie-box-img">
+                        <img src="images/batman.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
-                            <h2 class="movie-title">The Conjuring</h2>
-                            <span class="movie-type">Horror</span>
+                            <h2 class="movie-title">Batman</h2>
+                            <span class="movie-type">Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
                             </a>
@@ -147,10 +178,10 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/sweethome-large.jpg" alt="" class="movie-box-img">
+                        <img src="images/knights-of-the-zodiac.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
-                            <h2 class="movie-title">Sweet Home</h2>
-                            <span class="movie-type">Drama</span>
+                            <h2 class="movie-title">Knights of the Zodiac</h2>
+                            <span class="movie-type">Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
                             </a>
@@ -161,9 +192,9 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/devilmancrybaby-large.jpg" alt="" class="movie-box-img">
+                        <img src="images/joker.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
-                            <h2 class="movie-title">Devilman Crybaby</h2>
+                            <h2 class="movie-title">Joker</h2>
                             <span class="movie-type">Dark Fantasy, Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
@@ -175,7 +206,7 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/aliceinborderland-large.jpg" alt="" class="movie-box-img">
+                        <img src="images/aliceinborderland-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Alice in Borderland</h2>
                             <span class="movie-type">Suspense, Fiction, Survival, Drama</span>
@@ -189,7 +220,7 @@
 
                 <div class="swiper-slide">
                     <div class="movie-box">
-                        <img src="movies-assets/stranger-things-large.jpg" alt="" class="movie-box-img">
+                        <img src="images/stranger-things-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Stranger Things</h2>
                             <span class="movie-type">Action</span>
@@ -201,110 +232,6 @@
                 </div>
 
             </div>
-        </div>
-    </section>
-    <section class="movies container" id="movies">
-        <h2 class="heading-title">Movies and Shows</h2>
-        <div class="movies-content">
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/adventuretime-watch-again.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Adventure Time</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/berserk-watch-again.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Berserk</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/regular-show.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Regular Show</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/rick-and-morty.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Rick And Morty</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/adventuretime-watch-again.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Adventure Time</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/berserk-watch-again.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Berserk</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/regular-show.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Regular Show</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="movie-box">
-                    <img src="movies-assets/rick-and-morty.jpg" alt="" class="movie-box-img">
-                    <div class="box-text">
-                        <h2 class="movie-title">Rick And Morty</h2>
-                        <span class="movie-type">Action</span>
-                        <a href="#" class="watch-btn play-btn">
-                            <i class='bx bx-play'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="see-more">
-            <a href="#" class="see-more-btn">See More</a>
         </div>
     </section>
     <section class="popular container" id="popular">
@@ -319,10 +246,10 @@
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/spiderman-no-way-home.jpg  " alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/supermariobros-watch-again.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
-                            <h2 class="movie-title">Spider-Man: No Way Home</h2>
+                            <h2 class="movie-title">Super Mario Bros</h2>
                             <span class="movie-type">Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
@@ -333,8 +260,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/hellsing.jpg
+                    <div class="movie-box2">
+                        <img src="images/hellsing.jpg
                         " alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Hellsing</h2>
@@ -348,11 +275,11 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/berserk-large.jpg" alt="">
+                    <div class="movie-box2">
+                        <img src="images/spiderman.jpg" alt="">
                         <div class="box-text">
-                            <h2 class="movie-title">Berserk</h2>
-                            <span class="movie-type">Dark Fantasy, Action</span>
+                            <h2 class="movie-title">Spider-Man</h2>
+                            <span class="movie-type">Action</span>
                             <a href="#" class="watch-btn play-btn">
                                 <i class='bx bx-play'></i>
                             </a>
@@ -362,8 +289,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/large-movie-3.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/large-movie-3.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Peaky Blinders</h2>
                             <span class="movie-type">Fiction, Drama, Thriller</span>
@@ -376,8 +303,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/The-Conjuring-large.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/The-Conjuring-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">The Conjuring</h2>
                             <span class="movie-type">Horror</span>
@@ -390,8 +317,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/sweethome-large.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/sweethome-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Sweet Home</h2>
                             <span class="movie-type">Drama</span>
@@ -404,8 +331,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/devilmancrybaby-large.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/devilmancrybaby-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Devilman Crybaby</h2>
                             <span class="movie-type">Dark Fantasy, Action</span>
@@ -418,8 +345,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/aliceinborderland-large.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/aliceinborderland-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Alice in Borderland</h2>
                             <span class="movie-type">Suspense, Fiction, Survival, Drama</span>
@@ -432,8 +359,8 @@
 
 
                 <div class="swiper-slide">
-                    <div class="movie-box">
-                        <img src="movies-assets/stranger-things-large.jpg" alt="" class="movie-box-img">
+                    <div class="movie-box2">
+                        <img src="images/stranger-things-large.jpg" alt="" class="movie-box-img">
                         <div class="box-text">
                             <h2 class="movie-title">Stranger Things</h2>
                             <span class="movie-type">Action</span>
@@ -446,12 +373,124 @@
 
             </div>
         </div>
+    </section>
+    <section class="popular container" id="movies">
+        <div class="heading">
+            <h2 class="heading-title">Movies & Shows</h2>
+        </div>
+        <div class="movies-content">
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/adventuretime-watch-again.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Adventure Time</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/suicide-squad.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Suicide Squad</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/regular-show.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Regular Show</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/rick-and-morty.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Rick And Morty</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/south-park.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">South Park</h2>
+                        <span class="movie-type">Humor</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/hellokitty.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Hello Kitty</h2>
+                        <span class="movie-type">For Family</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/wednesday.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Wednesday</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="images/scream.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Scream 1996</h2>
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="#" class="see-more-btn">See More</a>
+        </div>
         <div class="copyright">
             <p>&#169; Dev.Luccas All Right Reserved<br>777-777-777</p>
         </div>
     </section>
     <script src="swiper bundle/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu"); 
+        }
+    </script>
 </body>
 
 </html>

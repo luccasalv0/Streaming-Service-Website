@@ -36,3 +36,4 @@ var swiper = new Swiper(".popular-content", {
         },
     },
 });
+
