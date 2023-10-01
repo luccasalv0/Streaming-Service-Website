@@ -22,7 +22,7 @@
                 <i class='bx bx-search-alt'></i>
             </div>
             <a href="#" class="user">
-                <img src="images/2avatar.png" alt="" class="user-img" onclick= "toggleMenu()">
+                <img src="images/2avatar.png" alt="" class="user-img" onclick="toggleMenu()">
             </a>
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
@@ -32,21 +32,23 @@
                     </div>
                     <hr>
                     <a href="" class="sub-menu-link">
-                        <i class='bx bx-credit-card sm-link'
-                        style='color:#ffffff'></i>
+                        <i class='bx bx-credit-card sm-link' style='color:#ffffff'></i>
                         <span class="span">Payments</span>
                         <span class="arrow">></span>
                     </a>
                     <a href="" class="sub-menu-link">
-                        <i class='bx bxs-pencil sm-link'
-                        style='color:#ffffff'></i>
+                        <i class='bx bxs-pencil sm-link' style='color:#ffffff'></i>
                         <span class="span">Edit Profile</span>
                         <span class="arrow">></span>
                     </a>
                     <a href="" class="sub-menu-link">
-                        <i class='bx bx-cog sm-link'
-                        style='color:#ffffff'></i>
+                        <i class='bx bx-cog sm-link' style='color:#ffffff'></i>
                         <span class="span">Settings</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-moon sm-link'></i>
+                        <span class="span">Theme</span>
                         <span class="arrow">></span>
                     </a>
                     <a href="" class="sub-menu-link">
@@ -57,30 +59,31 @@
                 </div>
             </div>
             <div class="navbar">
-                <a href="#home" class="nav-link nav-active">
-                    <i class='bx bx-home-alt'></i>
-                    <span class="nav-link-title">Home</span>
-                </a>
-                <a href="#home" class="nav-link">
-                    <i class='bx bxs-category'></i>
-                    <span class="nav-link-title">Categories</span>
-                </a>
-                <a href="my-favorites.html" class="nav-link">
-                    <i class='bx bxs-heart'></i>
-                    <span class="nav-link-title">Favorites</span>
-                </a>
-                <a href="my-list.html" class="nav-link">
-                    <i class='bx bx-list-check'></i>
-                    <span class="nav-link-title">My List</span>
-                </a>
-                <a href="trending.html" class="nav-link">
-                    <i class='bx bxs-hot'></i>
-                    <span class="nav-link-title">Trending</span>
-                </a>
-                <a href="#home" class="nav-link">
-                    <i class='bx bxs-bell'></i>
-                    <span class="nav-link-title">Notifications</span>
-                </a>
+                    <a href="#home" class="nav-link nav-active">
+                        <i class='bx bx-home-alt'></i>
+                        <span class="nav-link-title">Home</span>
+                    </a>
+                    <a href="categories.html" class="nav-link">
+                        <i class='bx bxs-category'></i>
+                        <span class="nav-link-title">Categories</span>
+                    </a>
+                    <a href="my-favorites.html" class="nav-link">
+                        <i class='bx bxs-heart'></i>
+                        <span class="nav-link-title">Favorites</span>
+                    </a>
+                    <a href="my-list.html" class="nav-link">
+                        <i class='bx bx-list-check'></i>
+                        <span class="nav-link-title">My List</span>
+                    </a>
+                    <a href="trending.html" class="nav-link">
+                        <i class='bx bxs-hot'></i>
+                        <span class="nav-link-title">Trending</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class='bx bxs-bell'></i>
+                        <span class="nav-link-title">Notifications</span>
+                    </a>
             </div>
         </div>
     </header>
@@ -487,8 +490,8 @@
     <script src="js/main.js"></script>
     <script>
         let subMenu = document.getElementById("subMenu");
-        function toggleMenu(){
-            subMenu.classList.toggle("open-menu"); 
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
         }
     </script>
 </body>

@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="swiper bundle/swiper-bundle.min.css">
     <title>My Favorites / Movies+</title>
+
 <body>
     <header>
         <div class="nav container">
@@ -19,15 +20,49 @@
                 <input type="search" id="search-input" placeholder="Search">
                 <i class='bx bx-search-alt'></i>
             </div>
-            <a href="¨#" class="user">
-                <img src="images/2avatar.png" alt="" class="user-img">
+            <a href="#" class="user">
+                <img src="images/2avatar.png" alt="" class="user-img" onclick="toggleMenu()">
             </a>
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/2avatar.png" alt="">
+                        <h3>Unknown User</h3>
+                    </div>
+                    <hr>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-credit-card sm-link' style='color:#ffffff'></i>
+                        <span class="span">Payments</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-pencil sm-link' style='color:#ffffff'></i>
+                        <span class="span">Edit Profile</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-cog sm-link' style='color:#ffffff'></i>
+                        <span class="span">Settings</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-moon sm-link'></i>
+                        <span class="span">Theme</span>
+                        <span class="arrow">></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bx-log-out sm-link' style='color:#ffffff'></i>
+                        <span class="span">Log-out</span>
+                    </a>
+
+                </div>
+            </div>
             <div class="navbar">
                 <a href="index.html" class="nav-link">
                     <i class='bx bx-home-alt'></i>
                     <span class="nav-link-title">Home</span>
                 </a>
-                <a href="#home" class="nav-link">
+                <a href="categories.html" class="nav-link">
                     <i class='bx bxs-category'></i>
                     <span class="nav-link-title">Categories</span>
                 </a>
@@ -70,10 +105,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="movie-box">
-                    <img src="images/suicide-squad.jpg" alt="" class="movie-box-img">
+                    <img src="images/scream4.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
-                        <h2 class="movie-title">Suicide Squad</h2>
-                        <span class="movie-type">Action</span>
+                        <h2 class="movie-title">Scream 4</h2>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -94,10 +129,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="movie-box">
-                    <img src="images/regular-show.jpg" alt="" class="movie-box-img">
+                    <img src="images/annabelle.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
-                        <h2 class="movie-title">Regular Show</h2>
-                        <span class="movie-type">Action</span>
+                        <h2 class="movie-title">Annabelle</h2>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -106,10 +141,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="movie-box">
-                    <img src="images/rick-and-morty.jpg" alt="" class="movie-box-img">
+                    <img src="images/scream2.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
-                        <h2 class="movie-title">Rick And Morty</h2>
-                        <span class="movie-type">Action</span>
+                        <h2 class="movie-title">Scream 2</h2>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -121,7 +156,7 @@
                     <img src="images/scream6.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
                         <h2 class="movie-title">Scream 6</h2>
-                        <span class="movie-type">Action</span>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -130,10 +165,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="movie-box">
-                    <img src="images/south-park.jpg" alt="" class="movie-box-img">
+                    <img src="images/scream5.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
-                        <h2 class="movie-title">South Park</h2>
-                        <span class="movie-type">Humor</span>
+                        <h2 class="movie-title">Scream 5</h2>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -142,10 +177,10 @@
             </div>
             <div class="swiper-slide">
                 <div class="movie-box">
-                    <img src="images/hellokitty.jpg" alt="" class="movie-box-img">
+                    <img src="images/scream3.jpg" alt="" class="movie-box-img">
                     <div class="box-text">
-                        <h2 class="movie-title">Hello Kitty</h2>
-                        <span class="movie-type">For Family</span>
+                        <h2 class="movie-title">Scream 3</h2>
+                        <span class="movie-type">Horror</span>
                         <a href="#" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
@@ -174,7 +209,7 @@
                             <i class='bx bx-play'></i>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -185,5 +220,12 @@
             <p>&#169; Dev.Luccas All Right Reserved<br>777-777-777</p>
         </div>
     </section>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
+
 </html>
